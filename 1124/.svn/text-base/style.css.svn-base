@@ -1,0 +1,617 @@
+
+/* DECLARE FONT FACES */
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Droid Serif'), url('droid_serif-webfont.svg#webfontiKqgu7aS') format('svg');
+}
+
+@font-face {
+  font-family: 'Droid Serif Bold';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Droid Serif'), url('droid_serif-webfont.svg#webfontiKqgu7aS') format('svg');
+}
+
+@font-face {
+	font-family: 'MinionProRegular';
+	src: local('Minion Pro'), local('MinionProRegular'), url('minionpro-regular-webfont.svg#webfontqzKVVSQ6') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MinionProIt';
+	src: local('Minion Pro'), local('MinionProIt'), url('minionpro-it-webfont.svg#webfontBGB4clAN') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'MinionProBold';
+	src: local('Minion Pro'), local('MinionProBold'), url('minionpro-bold-webfont.svg#webfonthav1F6zn') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knockout71FullMiddleweight';
+	src: local('Knockout'), local('Knockout71FullMiddlewt'), url('knockout-71fullmiddlewt-webfont.svg#webfontbaVb7l0o') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knockout69FullLiteweight';
+	src: local('Knockout'), local('Knockout69FullLiteweight'), url('knockout-69fullliteweight-webfont.svg#webfontJv4WvgOr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knockout68FullFeatherwt';
+	src: local('Knockout'), local('Knockout68FullFeatherwt'), url('knockout-68fullfeatherwt-webfont.svg#webfontpQTD8C7P') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knockout49Liteweight';
+	src: local('Knockout'), local('Knockout49Liteweight'), url('knockout-49liteweight-webfont.svg#webfontNhWYbxoD') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Knockout29JuniorLiteweight';
+	src: local('Knockout'), local('Knockout29JuniorLtweight'), url('knockout-29juniorltweight-webfont.svg#webfont5g54ZDIX') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GlosaMathRomanItalic';
+	src: local('Glosa Math'), local('GlosaMathRomanItalic'), url('glosamath-romanitalic-webfont.svg#webfontUuTUNfIl') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'GlosaMathRoman';
+	src: local('Glosa Math'), local('GlosaMathRoman'), url('glosamath-roman-webfont.svg#webfont0W9yTY7x') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GlosaMathMediumItalic';
+	src: local('Glosa Math'), local('GlosaMathMediumItalic'), url('glosamath-mediumitalic-webfont.svg#webfontlYyCxAIu') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'GlosaMath';
+	src: local('Glosa Math'), local('GlosaMathBoldItalic'), url('glosamath-bolditalic-webfont.svg#webfontoM9lnlsk') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'GlosaMath';
+	src: local('Glosa Math'), local('GlosaMathBold'), url('glosamath-bold-webfont.svg#webfontqNFtCoGH') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* GENERIC IPHONE CSS */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+.figures_preview {
+    margin: 10px 0px 10px 0px;
+    background-color: #F5F5F5;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.figures_preview b {
+    display: block;
+    font-weight: bold;
+    color: #999999;
+    text-transform: uppercase;   
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    font-size: 70%;
+}
+
+.figure_preview {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+}
+
+.figure_preview img {
+    max-width: 160px;
+    max-height: 120px;
+    border: 1px solid #999999;
+}
+
+h1 {
+    font-family: 'Droid Serif Bold';
+    font-weight: bold;
+    font-size: 180%;
+    margin: 10px 0 10px 0;
+    line-height: 1.1em;
+}
+
+div.authors {
+    width: auto;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70%;
+}
+
+div.authors:empty {
+    display: none;
+}
+
+div.authors:before {
+    content: "by ";
+}
+
+.abstract {
+    font-weight: bold;
+}
+
+.body, .references, .figures {
+    margin: 0 0 2em 0;
+}
+
+.body h2 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.body p img {
+    display:block;
+}
+
+.body p img.mathimg {
+    display: inline;
+}
+
+.mathimg {
+    display: inline;
+    margin: 0px 4px 0px 4px;
+}
+
+.references, .figures {
+    display: block;
+}
+
+.references h2, .figures h2 {
+    font-size: 120%;
+}
+
+.references li {
+    margin: 0 0 5px 0;
+    font-size: 90%;
+}
+
+.figures ul {
+    display: none;
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    text-align:center;}
+
+.figures ul li {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    display:block;
+    border: 1px solid #c3c3c3;
+    background-color: #fcfcfc;
+    text-align:center;
+    font-size: 90%;
+}
+
+.figures ul li img {
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.figures ul li .caption {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 100%;
+}
+
+.accesscontrol {
+    background-color: #FFBFBF;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.accesscontrol h2 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: #B30000;
+}
+
+.accesscontrol a {
+    color: #B30000;
+}
+
+.socialdrm {
+    clear: both;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid #d3d3d3;
+    font-style: italic; color: #999999;
+}
+
+.illustration {
+    clear: both;
+    float: right;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 10px;
+    max-width: 300px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;   
+    text-align: center;
+}
+
+.illustration img {
+    max-width: 300px;
+}
+
+.illustration .caption {
+    clear: both;
+    display: block;
+    text-align: left;
+    padding-top: 2px;
+    color: #999999; 
+    line-height: 1.2em;
+    font-size: 80%;
+}
+
+.illustration .caption p {
+    margin: 10px 0px 5px 0px;
+    line-height: 1.2em;
+}
+
+/* have to clear left to get rid of the drop cap */
+p {
+   /* text-indent: 10px; */
+}
+
+/* don't indent the first paragraph (that has the drop cap) */
+p:first-child {
+    text-indent: 0px;
+}
+
+a {
+    color: #00248F;
+}
+
+.category {
+    display: inline;
+    width: auto;
+    letter-spacing: 0.2em;
+    padding: 2px 5px 2px 5px;
+    font-family: Helvetica;
+    background-color: #999999;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 0.7em;
+}
+
+.tables .table {
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    padding: 5px;
+}
+
+.tables ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tables li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tables .caption {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    border: 0px;
+    background-color: #FFFFFF;
+}
+
+td {
+    padding: 4px;
+    font-size: 16px;
+    border-right: 1px solid #DEDEDE;
+}
+
+tr td:last-of-type {
+    border-right: 0px;
+}
+
+tr {
+    border-top: 1px solid #DEDEDE;
+}
+
+tr:nth-of-type(even) {
+    background-color: #FAFAFA;  
+}
+
+tr:nth-of-type(odd) {
+    background-color: #EFEFEF;
+}
+
+thead tr {
+    border-top: 1px solid #DEDEDE;
+}
+
+thead td {
+    padding: 4px;
+    border-right: 1px solid #DEDEDE;    
+    background-color: #EFEFEF;
+    margin: 2px 0px 0px 0px;
+    font-weight: bold;
+}
+
+thead td:last-of-type {
+    border-right: 0px;
+}
+
+tfoot td {
+    background-color: #FFFFFF;
+    font-style: italic;
+}
+
+.tablefooter {
+    font-style: italic;
+}
+
+.boxes {
+    display: block;
+}
+
+.boxes h2 {
+    font-size: 120%;
+}
+
+.boxes ul {
+    list-style-type: none;
+    margin: 0 10px;
+    padding: 0;
+    text-align:center;}
+
+.boxes ul li {
+    margin: 0 0 20px 0;
+    padding: 10px;
+    display:block;
+    border: 1px solid #c3c3c3;
+    background-color: #fcfcfc;
+    text-align:center;
+    font-size: 90%;
+}
+
+.boxes ul li img {
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+
+.boxes ul li .caption {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 100%;
+} 
+
+/* we can specify different CSS for the iPad using the @media selector */
+@media (min-width: 641px) {
+    body {
+        padding: 5px;
+    }
+}
+
+.box_body .illustration {
+    float: none;
+    max-width: 100%;
+}
+
+.box_body .illustration img {
+    max-width: 100%;
+}
+
+.table_body .illustration {
+    float: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	/* IPAD CSS */
+
+	.headingMainCat {
+		font-family: 'GlosaMathRoman';
+		font-weight: normal;
+		font-style: normal;
+		margin-top: 20px;
+		color: #034EA2;
+		font-size: 3em;
+	}
+
+	.artLine {
+		border-top: 1px solid #999;
+		width: 100%;
+		height: 2px;
+		clear: both;
+	}
+
+	.doiHead {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 0.75em;
+		text-align: right;
+		margin-top: -7px;
+	}
+
+	sup, sub {
+		height: 0;
+		line-height: 1;
+		vertical-align: baseline;
+		_vertical-align: bottom;
+		position: relative;
+
+	}
+
+	sup {
+		bottom: 1ex;
+	}
+
+	sub {
+		top: .5ex;
+	}
+
+	body {
+		font-family: "Times New Roman", Times, serif;
+	    font-size: 1em;
+	    line-height: 1.4em;
+		width: 680px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	td p {
+	    color: red;
+	    font-size: 1em;
+	    line-height: 1.2em;
+	}
+
+	td {
+	    font-size: 1em;
+	}
+
+	h1 {
+		font-family: 'MinionProBold';
+		font-weight: bold;
+		font-style: normal;
+	    font-size: 1.81em;
+	    margin: 20px 0 10px 0;
+	    line-height: 1.1em;
+	}
+
+	div.authors {
+	    width: auto;
+	    font-weight: bold;
+	    font-size: 70%;
+		color: #999;
+		margin-top: -5px;
+	}
+
+	div.authors:empty {
+	    display: none;
+	}
+
+	div.authors:before {
+	    content: "by ";
+	}
+
+	.abstract {
+		color: #333333;
+		font-weight: bold;
+		background: #E6E7E8;
+		padding: 2px 10px 2px 10px;
+		margin: 30px 0px 20px 0px;
+	}
+
+
+	.body, .references, .figures {
+	    margin: 0 0 2em 0;
+	}
+
+	.body h2 {
+		/*
+		font-family: 'Knockout69FullLiteweight';
+		letter-spacing: 0.04em;
+		*/
+		font-family: 'MinionProBold';
+		font-size: 1em;
+		text-transform: uppercase;	
+		margin-bottom: -15px;
+	}
+
+	.body p img {
+	    display:block;
+	}
+
+	.body p img.mathimg {
+	    display: inline;
+	}
+
+	.mathimg {
+	    display: inline;
+	    margin: 0px 4px 0px 4px;
+	}
+
+	.illustration {
+	    max-width: 300px;
+	    float: right;
+	    padding: 7px 0px 7px 0px;
+	    margin: 2px 0px 5px 30px;
+	    border-top: 1px solid #DEDEDE;
+	    border-bottom: 1px solid #DEDEDE;   
+	    text-align: center;
+		clear: right;
+	}
+
+	.illustration img {
+	    max-width: 300px;
+	}
+
+	.illustration .caption {
+	    font-family: 'MinionProBold';
+		font-weight: bold;
+		font-style: normal;
+	    clear: right;
+	    display: block;
+	    text-align: left;
+	    padding-top: 2px;
+	    color: #999999;
+		margin-bottom: -5px;
+		font-size: 0.88em;
+	}
+
+	.illustration .caption a {
+		font-weight: normal;
+	}
+
+	.illustration .caption p {
+	    margin: 10px 0px 5px 0px;
+	    line-height: 1.2em;
+	}
+}

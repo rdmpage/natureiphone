@@ -1,0 +1,186 @@
+/* Nature app styles */
+<style type="text/css" title="text/css">
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: normal;
+/*  src: local('Droid Serif'), url('droid_serif-webfont.svg#webfontiKqgu7aS') format('svg'); */
+  src: local('☺'), url('fonts/DroidSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Droid Serif Bold';
+  font-style: normal;
+  font-weight: bold;
+/*  src: local('Droid Serif'), url('droid_serif-webfont.svg#webfontiKqgu7aS') format('svg'); */
+  src: local('☺'), url('fonts/DroidSerif-Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-family: 'Droid Serif Bold';
+    font-weight: bold;
+    font-size: 180%;
+    margin: 10px 0 10px 0;
+    line-height: 1.1em;
+}
+
+.figures_preview {
+    margin: 10px 0px 10px 0px;
+    background-color: #F5F5F5;
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.figures_preview b {
+    display: block;
+    font-weight: bold;
+    color: #999999;
+    text-transform: uppercase;   
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    font-size: 70%;
+}
+
+.figure_preview {
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px 5px 10px;
+}
+
+.figure_preview img {
+    max-width: 160px;
+    max-height: 120px;
+    border: 1px solid #999999;
+}
+
+
+div.authors {
+    width: auto;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70%;
+}
+
+.category {
+    display: inline;
+    width: auto;
+    letter-spacing: 0.2em;
+    padding: 2px 5px 2px 5px;
+    font-family: Helvetica;
+    background-color: #999999;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 0.7em;
+}
+
+.illustration .caption {
+/*	font-family: 'MinionProBold';
+	font-weight: bold; */
+	font-style: normal;
+	clear: right;
+	display: block;
+	text-align: left;
+	padding-top: 2px;
+	color: #999999;
+	margin-bottom: -5px;
+	/*font-size: 0.88em;*/
+	text-shadow:none; /* rdmp remove text shadow */
+}
+
+.illustration .caption a {
+	font-weight: normal;
+}
+
+.illustration .caption p {
+	margin: 10px 0px 5px 0px;
+	line-height: 1.2em;
+}
+
+.tables .table {
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+    padding: 5px;
+}
+
+.tables ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tables li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.tables .caption {
+    font-size: 120%;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table {
+    border: 0px;
+    background-color: #FFFFFF;
+}
+
+td {
+    padding: 4px;
+    font-size: 16px;
+    border-right: 1px solid #DEDEDE;
+}
+
+tr td:last-of-type {
+    border-right: 0px;
+}
+
+tr {
+    border-top: 1px solid #DEDEDE;
+}
+
+tr:nth-of-type(even) {
+    background-color: #FAFAFA;  
+}
+
+tr:nth-of-type(odd) {
+    background-color: #EFEFEF;
+}
+
+thead tr {
+    border-top: 1px solid #DEDEDE;
+}
+
+thead td {
+    padding: 4px;
+    border-right: 1px solid #DEDEDE;    
+    background-color: #EFEFEF;
+    margin: 2px 0px 0px 0px;
+    font-weight: bold;
+}
+
+thead td:last-of-type {
+    border-right: 0px;
+}
+
+tfoot td {
+    background-color: #FFFFFF;
+    font-style: italic;
+}
+
+.tablefooter {
+    font-style: italic;
+}
+
